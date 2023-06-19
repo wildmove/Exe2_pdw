@@ -3,6 +3,7 @@ function showData() {
     var nim = document.getElementById("nim").value;
     var peminatan = document.getElementById("peminatan").value;
     var alamat = document.getElementById("alamat").value;
+    var gender = document.getElementById("gender").value;
 
     var date = new Date();
     var currentDate = date.toLocaleDateString();
@@ -11,6 +12,7 @@ function showData() {
     var message =
         "Nama: " + nama +
         "\nNIM: " + nim +
+        "\ngender: " + gender +
         "\nPeminatan: " + peminatan +
         "\nAlamat: " + alamat +
         "\nTanggal: " + currentDate +
