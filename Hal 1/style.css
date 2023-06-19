@@ -11,6 +11,9 @@ body {
 }
 
 .container {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     max-width: 900px;
     margin: 0 auto;
     padding: 20px;
@@ -18,7 +21,6 @@ body {
     border: 1px solid #e1e1e1;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-
 }
 
 .header {
