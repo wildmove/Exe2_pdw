@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="hal2.css">
+    <title>DOM Javascript</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h3>Pendaftaran Peminatan</h3>
+        </div>
+        <form action="">
+            <div class="box">
+                <label for="nama">Nama</label>
+                <input type="text" placeholder="Nama Anda" id="nama"><br><br>
+            </div>
+            <div class="box">
+                <label for="nim">NIM</label>
+                <input type="text" placeholder="NIM Anda" id="nim"><br><br>
+            </div>
+            <div class="box">
+                <label for="peminatan">Peminatan pada bidang:</label>
+                <select name="peminatan" id="peminatan">
+                    <option id="disable" value="" disabled selected style="color: #777777;">Pilih Peminatan</option>
+                    <option value="programming">Programming</option>
+                    <option value="desain">Desain</option>
+                    <option value="jaringan">Jaringan</option>
+                    <option value="data">Data</option>
+                </select>
+            </div>
+            <div class="box">
+                <label for="tanggal">Tanggal</label>
+                <input type="date" id="tanggal"><br><br>
+            </div>
+            <div class="box">
+                <label>Jenis Kelamin:</label><br>
+                <label for="laki-laki">
+                    <input type="radio" name="gender" id="laki-laki" value="Laki-laki"> Laki-laki
+                </label><br>
+                <label for="perempuan">
+                    <input type="radio" name="gender" id="perempuan" value="Perempuan"> Perempuan
+                </label><br>
+            </div>
+            <div class="box">
+                <label for="alamat">Alamat</label>
+                <textarea placeholder="Tulis alamatmu disini" name="alamat" id="alamat" cols="30"
+                    rows="5"></textarea><br><br>
+            </div>
+            <button onclick="showData()">Submit</button>
+        </form>
+
+    </div>
+
+    <script src="hal2.js"></script>
+</body>
+
+</html>
